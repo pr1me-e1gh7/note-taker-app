@@ -2,7 +2,7 @@
 const fs = require('fs');
 const route = require('express').Router();
 const { v4: uuidv4 } = require('uuid');
-const { scanandpush, checkinFile, addtoFile } = require('../helpers/utility.js');
+const { scanandpush, checkinFile, addtoFile } = require('./utility.js');
 
 // Fetch notes from db.json
 route.get('/notes', (req, res) => {

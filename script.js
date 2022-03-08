@@ -4,7 +4,7 @@ const express = require('express');
 const script = express();
 const pathdir = require('path');
 const port = process.env.PORT || 5000;
-const route = require('./routes/route.js');
+const route = require('./route.js');
 script.use(express.json());
 script.use(express.urlencoded({ extended: true }));
 script.use(express.static('public'));
